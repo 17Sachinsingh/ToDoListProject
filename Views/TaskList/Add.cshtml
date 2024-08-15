@@ -1,0 +1,20 @@
+﻿
+@model ToDoListProject.Models.AddTaskModel
+
+
+<form method="post">
+<h1>Add Task</h1>
+<div class="mt-3">
+    <label class="form-label">Description</label>
+    <input type="text" class="form-control" asp-for="TaskDescription" />
+
+</div>
+<div class="mt-3">
+    <input type="checkbox" class="form-check-input" id="Completed" asp-for="Status" />
+    <label class="form-check-label " for="Completed">Completed </label>
+
+</div>
+<div class="mt-3">
+    <button class="btn btn-primary" type="submit">Add</button>
+</div>
+</form>
